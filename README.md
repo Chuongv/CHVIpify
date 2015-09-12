@@ -7,7 +7,7 @@
 
 ## Usage
 
-Some times you need the IP address of the user's iphone. In this case you can use ipify.org to simplify
+Sometimes you need the IP address of the user's iphone. In this case you can use ipify.org to simplify
 this!
 
 ```objective-c
@@ -35,7 +35,7 @@ pod "CHVIpify"
 
 ## Installation without CocoaPods
 
-Just drag and drop `CHVIpify.h` and `CHVIpify.m` to your project
+Just drag and drop `CHVFetchIPManager.h` and `CHVFetchIPManager.m` to your project
 
 ## Author
 
