@@ -7,6 +7,9 @@
 
 ## Usage
 
+Some times you need the IP address of the user's iphone. In this case you can use ipify.org to simplify
+this!
+
 ```objective-c
 #import "CHVIPRetriever.h"
 
@@ -40,7 +43,7 @@ Just drag and drop `CHVIpify.h` and `CHVIpify.m` to your project
 
 ## Credit
 
-Big thanks to Randall Degges for running and maintaining [ipify](https://www.ipify.org)!
+Big thanks to [Randall Degges](http://www.rdegges.com) for running and maintaining [ipify](https://www.ipify.org)!
 
 ## License
 
