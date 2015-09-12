@@ -7,8 +7,11 @@
 //
 
 @import XCTest;
+#import "CHVIPRetriever.h"
 
 @interface Tests : XCTestCase
+
+@property (strong, nonatomic) CHVIPRetriever *retriever;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)setUp
 {
     [super setUp];
+    self.retriever = [CHVIPRetriever new];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -26,9 +30,16 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testFetchIP
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTestExpectation *expectation = [self expectationWithDescription:@"retrieve IP"];
+
+    [self.retriever getIPAddress:^(NSString *ip, NSError *error) {
+        NSLog(@"IP: %@", ip);
+        [expectation fulfill];
+    }];
+
+    [self waitForExpectationsWithTimeout:5.0 handler:nil];
 }
 
 @end
