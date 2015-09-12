@@ -12,7 +12,7 @@
 
 CHVIPRetriever *retriever = [CHVIPRetriever new];
 
-[self.retriever getIPAddress:^(NSString *ip, NSError *error) {
+[retriever getIPAddress:^(NSString *ip, NSError *error) {
 NSLog(@"IP: %@", ip); //your ip..
 }];
 ```
@@ -26,17 +26,17 @@ NSLog(@"IP: %@", ip); //your ip..
 CHVIpify is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-## Installation without CocoaPods
-
-Just drag and drop `CHVIpify.h` and `CHVIpify.m` to your project
-
 ```ruby
 pod "CHVIpify"
 ```
 
+## Installation without CocoaPods
+
+Just drag and drop `CHVIpify.h` and `CHVIpify.m` to your project
+
 ## Author
 
-Chuong Vu, chuongv@gmail.com
+[Chuong Vu](chuongv@gmail.com)
 
 ## Credit
 
