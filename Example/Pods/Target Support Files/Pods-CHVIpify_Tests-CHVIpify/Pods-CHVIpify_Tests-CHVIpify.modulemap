@@ -1,0 +1,6 @@
+framework module CHVIpify {
+  umbrella header "Pods-CHVIpify_Tests-CHVIpify-umbrella.h"
+
+  export *
+  module * { export * }
+}

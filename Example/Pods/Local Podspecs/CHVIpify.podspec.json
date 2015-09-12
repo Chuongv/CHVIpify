@@ -1,0 +1,25 @@
+{
+  "name": "CHVIpify",
+  "version": "0.1.0",
+  "summary": "A short description of CHVIpify.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CHVIpify",
+  "license": "MIT",
+  "authors": {
+    "Chuong Vu": "chuongv@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CHVIpify.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "CHVIpify": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

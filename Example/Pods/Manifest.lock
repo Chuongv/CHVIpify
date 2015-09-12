@@ -1,0 +1,14 @@
+PODS:
+  - CHVIpify (0.1.0)
+
+DEPENDENCIES:
+  - CHVIpify (from `../`)
+
+EXTERNAL SOURCES:
+  CHVIpify:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CHVIpify: 454e67b515d8a8455a6833a4b7201233587f617c
+
+COCOAPODS: 0.37.0
