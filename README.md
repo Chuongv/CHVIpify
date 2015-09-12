@@ -7,14 +7,28 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```objective-c
+#import "CHVIPRetriever.h"
+
+CHVIPRetriever *retriever = [CHVIPRetriever new];
+
+[self.retriever getIPAddress:^(NSString *ip, NSError *error) {
+NSLog(@"IP: %@", ip); //your ip..
+}];
+```
 
 ## Requirements
+* ARC
+* iOS7
 
-## Installation
+## Installation with CocoaPods
 
 CHVIpify is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
+
+## Installation without CocoaPods
+
+Just drag and drop `CHVIpify.h` and `CHVIpify.m` to your project
 
 ```ruby
 pod "CHVIpify"
@@ -23,6 +37,10 @@ pod "CHVIpify"
 ## Author
 
 Chuong Vu, chuongv@gmail.com
+
+## Credit
+
+Big thanks to Randall Degges for running and maintaining [ipify](https://www.ipify.org)!
 
 ## License
 
